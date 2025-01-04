@@ -15,6 +15,7 @@
 **/.vs
 **/.vscode
 **/.next
+**/.svelte-kit
 **/.cache
 **/*.*proj.user
 **/*.dbmdl

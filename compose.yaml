@@ -13,6 +13,13 @@ services:
       context: ./client
       target: final
     volumes:
-      - ./client/src:/opt/app
+      - type: bind
+        source: ./client/src
+        target: /opt/app
+      - type : volume
+        source: node_modules
+        target: /opt/app/node_modules
     ports:
       - 8080:8080
+volumes:
+  node_modules:
